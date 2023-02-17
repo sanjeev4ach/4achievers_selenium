@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="suite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="parameters">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="parameter" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="name" use="required" />
+                  <xs:attribute name="value" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="test">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="classes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="class">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="methods">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="include" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="name" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="name" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

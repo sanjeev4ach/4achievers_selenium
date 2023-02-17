@@ -1,0 +1,8 @@
+2023-01-30 22:22:24 INFO HeadlessTesting:26 - Invoking Chrome in headless mode
+2023-01-30 22:22:30 INFO HeadlessTesting:30 - Enetring Google URL
+2023-01-30 22:22:36 INFO HeadlessTesting:32 - Google is Opened
+2023-01-30 22:22:36 INFO HeadlessTesting:33 - Page title is - Google
+2023-01-30 22:22:36 INFO HeadlessTesting:34 - Page title is - https://www.google.com/
+2023-01-30 22:22:36 INFO HeadlessTesting:35 - quiting driver
+2023-01-30 22:22:44 INFO HeadlessTesting:50 - On Landing page - Amazon.com. Spend less. Smile more.
+2023-01-30 22:22:44 INFO HeadlessTesting:52 - driver quits

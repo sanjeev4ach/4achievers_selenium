@@ -1,0 +1,735 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 27, 2023 04:28:37 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('device-view')">
+<a id="nav-device" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tablet"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Rohit</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Regression</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tablet"></i></a>
+<ul id="device-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">chrome</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="4"
+          author="Rohit"
+          tag="Regression"
+          device="chrome">
+          <div class="test-detail">
+            <p class="name">First Test</p>
+            <p class="text-sm">
+              <span>16:28:37 pm</span> / <span>00:00:00:418</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">First Test</h5>
+<span class='badge badge-success'>01.27.2023 16:28:37</span>
+<span class='badge badge-danger'>01.27.2023 16:28:37</span>
+<span class='badge badge-default'>00:00:00:418</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Rohit</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">chrome</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:28:37 pm</td>
+        <td>
+          First Test in Extent Report
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:37 pm</td>
+        <td>
+          URL is loaded
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:37 pm</td>
+        <td>
+          Value Entered
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:28:37 pm</td>
+        <td>
+          <span class='badge white-text red'>failed to locate element</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:37 pm</td>
+        <td>
+          {
+  "jobAssignment" : {
+    "baseWageRates" : [ {
+      "hourlyRate" : "8",
+      "effectiveDate" : "2022-04-13"
+    } ],
+    "primaryLaborAccounts" : [ {
+      "organizationPath" : "LocationAPIOrg_20220712044217/India/Metropolitan Plant/Assembly/Assembler I",
+      "effectiveDate" : "2022-04-13"
+    } ],
+    "jobAssignmentDetails" : {
+      "payRuleEffectiveDate" : "2018-01-01",
+      "payRuleName" : "Agency Bi-Weekly"
+    }
+  },
+  "gdapAssignments" : [ {
+    "role" : "Manager_role",
+    "defaultSwitch" : true,
+    "originalEffectiveDate" : "2017-01-01",
+    "originalExpirationDate" : "2099-01-01",
+    "gdapName" : "All Access",
+    "effectiveDate" : "2017-01-01",
+    "expirationDate" : "2099-01-01"
+  } ],
+  "user" : {
+    "userAccount" : {
+      "userPassword" : "Pr0mensi0ns@UKG",
+      "passwordUpdateflag" : false,
+      "logonProfileName" : "Default",
+      "userName" : "UN385714"
+    }
+  },
+  "personInformation" : {
+    "expectedHoursList" : [ {
+      "quantity" : 80,
+      "timePeriodTypeName" : "Pay Period"
+    } ],
+    "emailAddresses" : [ {
+      "address" : "person.import.licensing@kronos.com",
+      "contactTypeName" : "work"
+    } ],
+    "person" : {
+      "firstName" : "Akansh",
+      "lastName" : "Garg385714",
+      "hireDate" : "2017-01-01",
+      "middleInitial" : "K",
+      "romanizedFullName" : "Akansh Garg385714",
+      "personNumber" : "PN385714",
+      "phoneticFullName" : "Akansh Garg385714",
+      "shortName" : "PN",
+      "birthDate" : "2017-01-01"
+    },
+    "personAuthenticationTypes" : [ {
+      "authenticationTypeName" : "Basic",
+      "activeFlag" : true
+    } ],
+    "personLicenseTypes" : [ {
+      "licenseTypeName" : "Manager",
+      "activeFlag" : true
+    }, {
+      "licenseTypeName" : "Hourly Timekeeping",
+      "activeFlag" : true
+    } ],
+    "badgeAssignments" : [ {
+      "badgeNumber" : "1385714",
+      "expirationDate" : "2099-12-31T10:15:30"
+    } ],
+    "userAccountStatusList" : [ {
+      "userAccountStatusName" : "Active",
+      "effectiveDate" : "2017-01-01"
+    } ],
+    "accessAssignment" : {
+      "managerPayCodeName" : "All Pay Codes",
+      "transferEmployeeFlag" : false,
+      "professionalPayCodeName" : "All Pay Codes",
+      "managerWorkRuleName" : "All Work Rules",
+      "approveovertimeflag" : false,
+      "professionalWorkRuleName" : "All Work Rules",
+      "shiftCodeName" : "All Shift Templates",
+      "managerViewPayCodeName" : "All Pay Codes",
+      "preferenceProfileName" : "Default",
+      "accessProfileName" : "HR Admin",
+      "delegateProfileName" : "Senior Managers Delegate Profile",
+      "notificationProfileName" : "All",
+      "schedulePatternName" : "All Pattern Templates",
+      "timeEntryTypeName" : "Hourly View"
+    },
+    "postalAddresses" : [ {
+      "country" : "IND",
+      "city" : "Noida",
+      "street" : "Sector 121",
+      "postalCode" : "201301",
+      "state" : "Uttar Pradesh",
+      "contactTypeName" : "Home"
+    } ],
+    "employmentStatusList" : [ {
+      "employmentStatusName" : "Active",
+      "effectiveDate" : "2017-01-01"
+    } ]
+  }
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:37 pm</td>
+        <td>
+          <pre>{<br>  "jobAssignment" : {<br>    "baseWageRates" : [ {<br>      "hourlyRate" : "8",<br>      "effectiveDate" : "2022-04-13"<br>    } ],<br>    "primaryLaborAccounts" : [ {<br>      "organizationPath" : "LocationAPIOrg_20220712044217/India/Metropolitan Plant/Assembly/Assembler I",<br>      "effectiveDate" : "2022-04-13"<br>    } ],<br>    "jobAssignmentDetails" : {<br>      "payRuleEffectiveDate" : "2018-01-01",<br>      "payRuleName" : "Agency Bi-Weekly"<br>    }<br>  },<br>  "gdapAssignments" : [ {<br>    "role" : "Manager_role",<br>    "defaultSwitch" : true,<br>    "originalEffectiveDate" : "2017-01-01",<br>    "originalExpirationDate" : "2099-01-01",<br>    "gdapName" : "All Access",<br>    "effectiveDate" : "2017-01-01",<br>    "expirationDate" : "2099-01-01"<br>  } ],<br>  "user" : {<br>    "userAccount" : {<br>      "userPassword" : "Pr0mensi0ns@UKG",<br>      "passwordUpdateflag" : false,<br>      "logonProfileName" : "Default",<br>      "userName" : "UN385714"<br>    }<br>  },<br>  "personInformation" : {<br>    "expectedHoursList" : [ {<br>      "quantity" : 80,<br>      "timePeriodTypeName" : "Pay Period"<br>    } ],<br>    "emailAddresses" : [ {<br>      "address" : "person.import.licensing@kronos.com",<br>      "contactTypeName" : "work"<br>    } ],<br>    "person" : {<br>      "firstName" : "Akansh",<br>      "lastName" : "Garg385714",<br>      "hireDate" : "2017-01-01",<br>      "middleInitial" : "K",<br>      "romanizedFullName" : "Akansh Garg385714",<br>      "personNumber" : "PN385714",<br>      "phoneticFullName" : "Akansh Garg385714",<br>      "shortName" : "PN",<br>      "birthDate" : "2017-01-01"<br>    },<br>    "personAuthenticationTypes" : [ {<br>      "authenticationTypeName" : "Basic",<br>      "activeFlag" : true<br>    } ],<br>    "personLicenseTypes" : [ {<br>      "licenseTypeName" : "Manager",<br>      "activeFlag" : true<br>    }, {<br>      "licenseTypeName" : "Hourly Timekeeping",<br>      "activeFlag" : true<br>    } ],<br>    "badgeAssignments" : [ {<br>      "badgeNumber" : "1385714",<br>      "expirationDate" : "2099-12-31T10:15:30"<br>    } ],<br>    "userAccountStatusList" : [ {<br>      "userAccountStatusName" : "Active",<br>      "effectiveDate" : "2017-01-01"<br>    } ],<br>    "accessAssignment" : {<br>      "managerPayCodeName" : "All Pay Codes",<br>      "transferEmployeeFlag" : false,<br>      "professionalPayCodeName" : "All Pay Codes",<br>      "managerWorkRuleName" : "All Work Rules",<br>      "approveovertimeflag" : false,<br>      "professionalWorkRuleName" : "All Work Rules",<br>      "shiftCodeName" : "All Shift Templates",<br>      "managerViewPayCodeName" : "All Pay Codes",<br>      "preferenceProfileName" : "Default",<br>      "accessProfileName" : "HR Admin",<br>      "delegateProfileName" : "Senior Managers Delegate Profile",<br>      "notificationProfileName" : "All",<br>      "schedulePatternName" : "All Pattern Templates",<br>      "timeEntryTypeName" : "Hourly View"<br>    },<br>    "postalAddresses" : [ {<br>      "country" : "IND",<br>      "city" : "Noida",<br>      "street" : "Sector 121",<br>      "postalCode" : "201301",<br>      "state" : "Uttar Pradesh",<br>      "contactTypeName" : "Home"<br>    } ],<br>    "employmentStatusList" : [ {<br>      "employmentStatusName" : "Active",<br>      "effectiveDate" : "2017-01-01"<br>    } ]<br>  }<br>}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:37 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({
+  "jobAssignment" : {
+    "baseWageRates" : [ {
+      "hourlyRate" : "8",
+      "effectiveDate" : "2022-04-13"
+    } ],
+    "primaryLaborAccounts" : [ {
+      "organizationPath" : "LocationAPIOrg_20220712044217/India/Metropolitan Plant/Assembly/Assembler I",
+      "effectiveDate" : "2022-04-13"
+    } ],
+    "jobAssignmentDetails" : {
+      "payRuleEffectiveDate" : "2018-01-01",
+      "payRuleName" : "Agency Bi-Weekly"
+    }
+  },
+  "gdapAssignments" : [ {
+    "role" : "Manager_role",
+    "defaultSwitch" : true,
+    "originalEffectiveDate" : "2017-01-01",
+    "originalExpirationDate" : "2099-01-01",
+    "gdapName" : "All Access",
+    "effectiveDate" : "2017-01-01",
+    "expirationDate" : "2099-01-01"
+  } ],
+  "user" : {
+    "userAccount" : {
+      "userPassword" : "Pr0mensi0ns@UKG",
+      "passwordUpdateflag" : false,
+      "logonProfileName" : "Default",
+      "userName" : "UN385714"
+    }
+  },
+  "personInformation" : {
+    "expectedHoursList" : [ {
+      "quantity" : 80,
+      "timePeriodTypeName" : "Pay Period"
+    } ],
+    "emailAddresses" : [ {
+      "address" : "person.import.licensing@kronos.com",
+      "contactTypeName" : "work"
+    } ],
+    "person" : {
+      "firstName" : "Akansh",
+      "lastName" : "Garg385714",
+      "hireDate" : "2017-01-01",
+      "middleInitial" : "K",
+      "romanizedFullName" : "Akansh Garg385714",
+      "personNumber" : "PN385714",
+      "phoneticFullName" : "Akansh Garg385714",
+      "shortName" : "PN",
+      "birthDate" : "2017-01-01"
+    },
+    "personAuthenticationTypes" : [ {
+      "authenticationTypeName" : "Basic",
+      "activeFlag" : true
+    } ],
+    "personLicenseTypes" : [ {
+      "licenseTypeName" : "Manager",
+      "activeFlag" : true
+    }, {
+      "licenseTypeName" : "Hourly Timekeeping",
+      "activeFlag" : true
+    } ],
+    "badgeAssignments" : [ {
+      "badgeNumber" : "1385714",
+      "expirationDate" : "2099-12-31T10:15:30"
+    } ],
+    "userAccountStatusList" : [ {
+      "userAccountStatusName" : "Active",
+      "effectiveDate" : "2017-01-01"
+    } ],
+    "accessAssignment" : {
+      "managerPayCodeName" : "All Pay Codes",
+      "transferEmployeeFlag" : false,
+      "professionalPayCodeName" : "All Pay Codes",
+      "managerWorkRuleName" : "All Work Rules",
+      "approveovertimeflag" : false,
+      "professionalWorkRuleName" : "All Work Rules",
+      "shiftCodeName" : "All Shift Templates",
+      "managerViewPayCodeName" : "All Pay Codes",
+      "preferenceProfileName" : "Default",
+      "accessProfileName" : "HR Admin",
+      "delegateProfileName" : "Senior Managers Delegate Profile",
+      "notificationProfileName" : "All",
+      "schedulePatternName" : "All Pattern Templates",
+      "timeEntryTypeName" : "Hourly View"
+    },
+    "postalAddresses" : [ {
+      "country" : "IND",
+      "city" : "Noida",
+      "street" : "Sector 121",
+      "postalCode" : "201301",
+      "state" : "Uttar Pradesh",
+      "contactTypeName" : "Home"
+    } ],
+    "employmentStatusList" : [ {
+      "employmentStatusName" : "Active",
+      "effectiveDate" : "2017-01-01"
+    } ]
+  }
+}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:28:37 pm</td>
+        <td>
+          <ol><li>Test1:Sanjeev</li><li>Test:Rohit</li></ol>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Regression</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:28:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>First Test</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view device-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Device</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">chrome</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>chrome</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:28:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>First Test</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Rohit</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Rohit</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:28:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>First Test</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 27, 2023 04:28:37 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 27, 2023 04:28:42 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='25%'><b>2</b> events passed</small></div>
+<div>
+<small data-tooltip='12%'><b>1</b> events failed,
+<b data-tooltip='%'>5</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"First Test":0.418
+};
+</script>
+<div class="row">
+<div class="col-md-4 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>Rohit</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Regression</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-md-4 device-container">
+<div class="card">
+<div class="card-header"><p>Device</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>chrome</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 2,
+failEvents: 1,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 5
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

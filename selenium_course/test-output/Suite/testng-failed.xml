@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="4achievers_testing_learning(failed)">
+    <classes>
+      <class name="testng_course.SecondTest">
+        <methods>
+          <include name="flushExtent"/>
+          <include name="setUP"/>
+          <include name="firstTest"/>
+          <include name="setUpExtentReport"/>
+          <include name="testFunction"/>
+        </methods>
+      </class> <!-- testng_course.SecondTest -->
+      <class name="testng_course.ScreenshotTest">
+        <methods>
+          <include name="openGoogle"/>
+          <include name="flushExtent"/>
+          <include name="setUP"/>
+          <include name="setUpExtentReport"/>
+          <include name="testFunction"/>
+          <include name="openAmazon"/>
+        </methods>
+      </class> <!-- testng_course.ScreenshotTest -->
+    </classes>
+  </test> <!-- 4achievers_testing_learning(failed) -->
+</suite> <!-- Failed suite [Suite] -->

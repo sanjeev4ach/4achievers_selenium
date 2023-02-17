@@ -1,0 +1,758 @@
+<html>
+<head>
+<title>TestNG:  all-tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>all-tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>30/5/3</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 27 16:25:21 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>313 seconds (313453 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testng_course.AmazonTest_testng.setUp()'><b>setUp</b><br>Test class: testng_course.AmazonTest_testng</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\my_backup\C\Selenium_Course\selenium_course\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace134708375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace134708375'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\my_backup\C\Selenium_Course\selenium_course\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1674816997</td>
+<td>testng_course.AmazonTest_testng@1ca3b418</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testng_course.AmazonTest_testng.tearDown()'><b>tearDown</b><br>Test class: testng_course.AmazonTest_testng</td>
+<td></td>
+<td>-1674816997</td>
+<td>testng_course.AmazonTest_testng@1ca3b418</td></tr>
+<tr>
+<td title='testng_course.AmazonTest_testng.setUp()'><b>setUp</b><br>Test class: testng_course.AmazonTest_testng</td>
+<td></td>
+<td>-1674816997</td>
+<td>testng_course.AmazonTest_testng@1ca3b418</td></tr>
+<tr>
+<td title='testng_course.AmazonTest_testng.tearDown()'><b>tearDown</b><br>Test class: testng_course.AmazonTest_testng</td>
+<td></td>
+<td>-1674816997</td>
+<td>testng_course.AmazonTest_testng@1ca3b418</td></tr>
+<tr>
+<td title='testng_course.AmazonTest_testng.setUp()'><b>setUp</b><br>Test class: testng_course.AmazonTest_testng</td>
+<td></td>
+<td>-1674816997</td>
+<td>testng_course.AmazonTest_testng@1ca3b418</td></tr>
+<tr>
+<td title='testng_course.AmazonTest_testng.tearDown()'><b>tearDown</b><br>Test class: testng_course.AmazonTest_testng</td>
+<td></td>
+<td>-1674816997</td>
+<td>testng_course.AmazonTest_testng@1ca3b418</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testng_course.DesiredCap.setUp()'><b>setUp</b><br>Test class: testng_course.DesiredCap<br>Parameters: chrome</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: There was an error creating WebDriver object for Chrome
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1775)
+	at io.github.bonigarcia.wdm.WebDriverManager.create(WebDriverManager.java:425)
+	at testng_course.DesiredCap.setUp(DesiredCap.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NoSuchMethodException: org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(org.openqa.selenium.remote.DesiredCapabilities)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3641)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2810)
+	at io.github.bonigarcia.wdm.webdriver.WebDriverCreator.createLocalWebDriver(WebDriverCreator.java:60)
+	at io.github.bonigarcia.wdm.WebDriverManager.createLocalWebDriver(WebDriverManager.java:1949)
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1764)
+	... 28 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace590035788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace590035788'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: There was an error creating WebDriver object for Chrome
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1775)
+	at io.github.bonigarcia.wdm.WebDriverManager.create(WebDriverManager.java:425)
+	at testng_course.DesiredCap.setUp(DesiredCap.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoSuchMethodException: org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(org.openqa.selenium.remote.DesiredCapabilities)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3641)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2810)
+	at io.github.bonigarcia.wdm.webdriver.WebDriverCreator.createLocalWebDriver(WebDriverCreator.java:60)
+	at io.github.bonigarcia.wdm.WebDriverManager.createLocalWebDriver(WebDriverManager.java:1949)
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1764)
+	... 28 more
+</pre></div></td>
+<td>0</td>
+<td>testng_course.DesiredCap@2034b64c</td></tr>
+<tr>
+<td title='testng_course.DataProviderTest.testDataProvider()'><b>testDataProvider</b><br>Test class: testng_course.DataProviderTest<br>Test method: Testing data provider annotation with one D object array<br>Parameters: firefox</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: There was an error creating WebDriver object for Firefox
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1775)
+	at io.github.bonigarcia.wdm.WebDriverManager.create(WebDriverManager.java:425)
+	at testng_course.DataProviderTest.testDataProvider(DataProviderTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at io.github.bonigarcia.wdm.webdriver.WebDriverCreator.createLocalWebDriver(WebDriverCreator.java:64)
+	at io.github.bonigarcia.wdm.WebDriverManager.createLocalWebDriver(WebDriverManager.java:1949)
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1764)
+	... 28 more
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line 
+Host info: host: &apos;HVNYRR3&apos;, ip: &apos;192.168.1.101&apos;
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:228)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
+	... 33 more
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1170803205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1170803205'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: There was an error creating WebDriver object for Firefox
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1775)
+	at io.github.bonigarcia.wdm.WebDriverManager.create(WebDriverManager.java:425)
+	at testng_course.DataProviderTest.testDataProvider(DataProviderTest.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:79)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at io.github.bonigarcia.wdm.webdriver.WebDriverCreator.createLocalWebDriver(WebDriverCreator.java:64)
+	at io.github.bonigarcia.wdm.WebDriverManager.createLocalWebDriver(WebDriverManager.java:1949)
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1764)
+	... 28 more
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line 
+Host info: host: &apos;HVNYRR3&apos;, ip: &apos;192.168.1.101&apos;
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:228)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	... 33 more
+</pre></div></td>
+<td>2</td>
+<td>testng_course.DataProviderTest@58cbafc2</td></tr>
+<tr>
+<td title='testng_course.DesiredCap.setUp()'><b>setUp</b><br>Test class: testng_course.DesiredCap<br>Parameters: edge</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: There was an error creating WebDriver object for Edge
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1775)
+	at io.github.bonigarcia.wdm.WebDriverManager.create(WebDriverManager.java:425)
+	at testng_course.DesiredCap.setUp(DesiredCap.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NoSuchMethodException: org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(org.openqa.selenium.remote.DesiredCapabilities)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3641)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2810)
+	at io.github.bonigarcia.wdm.webdriver.WebDriverCreator.createLocalWebDriver(WebDriverCreator.java:60)
+	at io.github.bonigarcia.wdm.WebDriverManager.createLocalWebDriver(WebDriverManager.java:1949)
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1764)
+	... 28 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2006206648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2006206648'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: There was an error creating WebDriver object for Edge
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1775)
+	at io.github.bonigarcia.wdm.WebDriverManager.create(WebDriverManager.java:425)
+	at testng_course.DesiredCap.setUp(DesiredCap.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoSuchMethodException: org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(org.openqa.selenium.remote.DesiredCapabilities)
+	at java.base/java.lang.Class.getConstructor0(Class.java:3641)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2810)
+	at io.github.bonigarcia.wdm.webdriver.WebDriverCreator.createLocalWebDriver(WebDriverCreator.java:60)
+	at io.github.bonigarcia.wdm.WebDriverManager.createLocalWebDriver(WebDriverManager.java:1949)
+	at io.github.bonigarcia.wdm.WebDriverManager.instantiateDriver(WebDriverManager.java:1764)
+	... 28 more
+</pre></div></td>
+<td>6</td>
+<td>testng_course.DesiredCap@2034b64c</td></tr>
+<tr>
+<td title='testng_course.DataProviderTest.fillRegistrationPageWith2DArray()'><b>fillRegistrationPageWith2DArray</b><br>Test class: testng_course.DataProviderTest<br>Test method: Testing data provider annotation with one D object array<br>Parameters: rohit Test2, testUser2, testPass2</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.76)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [194d6ebfd3307236342f217f5b8b948a, clickElement {id=043dc927-05b8-4d81-91c6-d0cf6491145c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.76, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ROHIT~1.SAL\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:55914}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55914/devtoo..., se:cdpVersion: 109.0.5414.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (194d6ebfd3307236342f217f5b8b948a)] -&gt; css selector: #nav-flyout-ya-newCust&gt;a]
+Session ID: 194d6ebfd3307236342f217f5b8b948a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at testng_course.DataProviderTest.fillRegistrationPageWith2DArray(DataProviderTest.java:185)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace904540471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace904540471'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.76)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [194d6ebfd3307236342f217f5b8b948a, clickElement {id=043dc927-05b8-4d81-91c6-d0cf6491145c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.76, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ROHIT~1.SAL\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:55914}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55914/devtoo..., se:cdpVersion: 109.0.5414.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (194d6ebfd3307236342f217f5b8b948a)] -&gt; css selector: #nav-flyout-ya-newCust&gt;a]
+Session ID: 194d6ebfd3307236342f217f5b8b948a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at testng_course.DataProviderTest.fillRegistrationPageWith2DArray(DataProviderTest.java:185)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>11</td>
+<td>testng_course.DataProviderTest@58cbafc2</td></tr>
+<tr>
+<td title='testng_course.TestAnnotations.invocationTimeOut()'><b>invocationTimeOut</b><br>Test class: testng_course.TestAnnotations</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method testng_course.TestAnnotations.invocationTimeOut() didn&apos;t finish within the time-out 50000
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace267081652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace267081652'><pre>org.testng.internal.thread.ThreadTimeoutException: Method testng_course.TestAnnotations.invocationTimeOut() didn&apos;t finish within the time-out 50000
+	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNewExecutor(MethodInvocationHelper.java:384)
+	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:283)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:604)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>50</td>
+<td>testng_course.TestAnnotations@cb0755b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testng_course.DataProviderTest.testDataProviderOf2dArray()'><b>testDataProviderOf2dArray</b><br>Test class: testng_course.DataProviderTest<br>Test method: Testing data provider annotation with Two D object array<br>Parameters: Test, test, Test.test@gmail.com</td>
+<td></td>
+<td>11</td>
+<td>testng_course.DataProviderTest@58cbafc2</td></tr>
+<tr>
+<td title='testng_course.ActionsClass_LearnScreenShot.dragAndDrop()'><b>dragAndDrop</b><br>Test class: testng_course.ActionsClass_LearnScreenShot</td>
+<td></td>
+<td>5</td>
+<td>testng_course.ActionsClass_LearnScreenShot@6574a52c</td></tr>
+<tr>
+<td title='testng_course.DataProviderTest.fillRegistrationPage2ndWay()'><b>fillRegistrationPage2ndWay</b><br>Test class: testng_course.DataProviderTest<br>Test method: Testing data provider annotation with one D object array<br>Parameters: {firstname=rohit Test2, password=testPass2, phoneNumber=testUser2}</td>
+<td></td>
+<td>9</td>
+<td>testng_course.DataProviderTest@58cbafc2</td></tr>
+<tr>
+<td title='testng_course.OptionsClass.fillRegistrationPage()'><b>fillRegistrationPage</b><br>Test class: testng_course.OptionsClass<br>Parameters: {firstname=rohit Test, password=testPass, phoneNumber=testUser}</td>
+<td></td>
+<td>7</td>
+<td>testng_course.OptionsClass@53fb3dab</td></tr>
+<tr>
+<td title='testng_course.ActionsClass_LearnScreenShot.automateGoogleSearch()'><b>automateGoogleSearch</b><br>Test class: testng_course.ActionsClass_LearnScreenShot</td>
+<td></td>
+<td>7</td>
+<td>testng_course.ActionsClass_LearnScreenShot@6574a52c</td></tr>
+<tr>
+<td title='testng_course.First_Day_testng.verifyTitle_test()'><b>verifyTitle_test</b><br>Test class: testng_course.First_Day_testng</td>
+<td></td>
+<td>0</td>
+<td>testng_course.First_Day_testng@3a7442c7</td></tr>
+<tr>
+<td title='testng_course.ActionsClass_LearnScreenShot.testDataProviderOf2dArray()'><b>testDataProviderOf2dArray</b><br>Test class: testng_course.ActionsClass_LearnScreenShot<br>Test method: Testing data provider annotation with Two D object array<br>Parameters: Rohit, Sharma, Rohit.sharma@gmail.com</td>
+<td></td>
+<td>9</td>
+<td>testng_course.ActionsClass_LearnScreenShot@6574a52c</td></tr>
+<tr>
+<td title='testng_course.TestAnnotations.invocationCount()'><b>invocationCount</b><br>Test class: testng_course.TestAnnotations</td>
+<td></td>
+<td>9</td>
+<td>testng_course.TestAnnotations@cb0755b</td></tr>
+<tr>
+<td title='testng_course.TestAnnotations.invocationCount()'><b>invocationCount</b><br>Test class: testng_course.TestAnnotations</td>
+<td></td>
+<td>9</td>
+<td>testng_course.TestAnnotations@cb0755b</td></tr>
+<tr>
+<td title='testng_course.TestAnnotations.invocationCount()'><b>invocationCount</b><br>Test class: testng_course.TestAnnotations</td>
+<td></td>
+<td>11</td>
+<td>testng_course.TestAnnotations@cb0755b</td></tr>
+<tr>
+<td title='testng_course.First_Day_testng.verifyTitle()'><b>verifyTitle</b><br>Test class: testng_course.First_Day_testng</td>
+<td></td>
+<td>0</td>
+<td>testng_course.First_Day_testng@3a7442c7</td></tr>
+<tr>
+<td title='testng_course.GenerateExtentFiveForAllTests.attachScreenShotBase64()'><b>attachScreenShotBase64</b><br>Test class: testng_course.GenerateExtentFiveForAllTests</td>
+<td></td>
+<td>7</td>
+<td>testng_course.GenerateExtentFiveForAllTests@4be29ed9</td></tr>
+<tr>
+<td title='testng_course.GenerateExtentReportsFive.extentTest()'><b>extentTest</b><br>Test class: testng_course.GenerateExtentReportsFive</td>
+<td></td>
+<td>9</td>
+<td>testng_course.GenerateExtentReportsFive@548d708a</td></tr>
+<tr>
+<td title='testng_course.DataProviderTest.fillRegistrationPage()'><b>fillRegistrationPage</b><br>Test class: testng_course.DataProviderTest<br>Test method: Testing data provider annotation with one D object array<br>Parameters: {firstname=rohit Test, password=testPass, phoneNumber=testUser}</td>
+<td></td>
+<td>13</td>
+<td>testng_course.DataProviderTest@58cbafc2</td></tr>
+<tr>
+<td title='testng_course.ActionsClass_LearnScreenShot.testDataProviderOf2dArray()'><b>testDataProviderOf2dArray</b><br>Test class: testng_course.ActionsClass_LearnScreenShot<br>Test method: Testing data provider annotation with Two D object array<br>Parameters: Rohit, Sharma, Rohit.sharma@gmail.com</td>
+<td></td>
+<td>8</td>
+<td>testng_course.ActionsClass_LearnScreenShot@6574a52c</td></tr>
+<tr>
+<td title='testng_course.GenerateExtentFiveForAllTests.attachScreenShot64()'><b>attachScreenShot64</b><br>Test class: testng_course.GenerateExtentFiveForAllTests</td>
+<td></td>
+<td>7</td>
+<td>testng_course.GenerateExtentFiveForAllTests@4be29ed9</td></tr>
+<tr>
+<td title='testng_course.ActionsClass_LearnScreenShot.performRightClickOnGoogle()'><b>performRightClickOnGoogle</b><br>Test class: testng_course.ActionsClass_LearnScreenShot</td>
+<td></td>
+<td>20</td>
+<td>testng_course.ActionsClass_LearnScreenShot@6574a52c</td></tr>
+<tr>
+<td title='testng_course.ActionsClass_LearnScreenShot.testDataProviderOf2dArray()'><b>testDataProviderOf2dArray</b><br>Test class: testng_course.ActionsClass_LearnScreenShot<br>Test method: Testing data provider annotation with Two D object array<br>Parameters: Virat, Kohli, Virat.Kohli@gmail.com</td>
+<td></td>
+<td>12</td>
+<td>testng_course.ActionsClass_LearnScreenShot@6574a52c</td></tr>
+<tr>
+<td title='testng_course.DataProviderTest.fillRegistrationPageWith2DArray()'><b>fillRegistrationPageWith2DArray</b><br>Test class: testng_course.DataProviderTest<br>Test method: Testing data provider annotation with one D object array<br>Parameters: rohit Test, testUser, testPass</td>
+<td></td>
+<td>12</td>
+<td>testng_course.DataProviderTest@58cbafc2</td></tr>
+<tr>
+<td title='testng_course.ActionsClass_LearnScreenShot.testDataProviderOf2dArray()'><b>testDataProviderOf2dArray</b><br>Test class: testng_course.ActionsClass_LearnScreenShot<br>Test method: Testing data provider annotation with Two D object array<br>Parameters: Sanjeev, Agarwal, Sanjeev.Agarwal@gmail.com</td>
+<td></td>
+<td>10</td>
+<td>testng_course.ActionsClass_LearnScreenShot@6574a52c</td></tr>
+<tr>
+<td title='testng_course.TestAnnotations.invocationCount()'><b>invocationCount</b><br>Test class: testng_course.TestAnnotations</td>
+<td></td>
+<td>8</td>
+<td>testng_course.TestAnnotations@cb0755b</td></tr>
+<tr>
+<td title='testng_course.DataProviderTest.fillRegistrationPage2ndWay()'><b>fillRegistrationPage2ndWay</b><br>Test class: testng_course.DataProviderTest<br>Test method: Testing data provider annotation with one D object array<br>Parameters: {firstname=rohit Test, password=testPass, phoneNumber=testUser}</td>
+<td></td>
+<td>8</td>
+<td>testng_course.DataProviderTest@58cbafc2</td></tr>
+<tr>
+<td title='testng_course.DataProviderTest.fillRegistrationPage()'><b>fillRegistrationPage</b><br>Test class: testng_course.DataProviderTest<br>Test method: Testing data provider annotation with one D object array<br>Parameters: {firstname=rohit Test2, password=testPass2, phoneNumber=testUser2}</td>
+<td></td>
+<td>6</td>
+<td>testng_course.DataProviderTest@58cbafc2</td></tr>
+<tr>
+<td title='testng_course.HandleWebTable.handleWebTable()'><b>handleWebTable</b><br>Test class: testng_course.HandleWebTable<br>Parameters: test</td>
+<td></td>
+<td>11</td>
+<td>testng_course.HandleWebTable@4b013c76</td></tr>
+<tr>
+<td title='testng_course.OptionsClass.fillRegistrationPage()'><b>fillRegistrationPage</b><br>Test class: testng_course.OptionsClass<br>Parameters: {firstname=rohit Test2, password=testPass2, phoneNumber=testUser2}</td>
+<td></td>
+<td>14</td>
+<td>testng_course.OptionsClass@53fb3dab</td></tr>
+<tr>
+<td title='testng_course.DataProviderTest.testDataProviderOf2dArray()'><b>testDataProviderOf2dArray</b><br>Test class: testng_course.DataProviderTest<br>Test method: Testing data provider annotation with Two D object array<br>Parameters: Rohit, Sharma, Rohit.sharma@gmail.com</td>
+<td></td>
+<td>6</td>
+<td>testng_course.DataProviderTest@58cbafc2</td></tr>
+<tr>
+<td title='testng_course.DataProviderTest.testDataProvider()'><b>testDataProvider</b><br>Test class: testng_course.DataProviderTest<br>Test method: Testing data provider annotation with one D object array<br>Parameters: chrome</td>
+<td></td>
+<td>7</td>
+<td>testng_course.DataProviderTest@58cbafc2</td></tr>
+<tr>
+<td title='testng_course.First_Day_testng.testMethod()'><b>testMethod</b><br>Test class: testng_course.First_Day_testng</td>
+<td></td>
+<td>0</td>
+<td>testng_course.First_Day_testng@3a7442c7</td></tr>
+<tr>
+<td title='testng_course.TestAnnotations.invocationCount()'><b>invocationCount</b><br>Test class: testng_course.TestAnnotations</td>
+<td></td>
+<td>12</td>
+<td>testng_course.TestAnnotations@cb0755b</td></tr>
+<tr>
+<td title='testng_course.GenerateExtentFiveForAllTests.attachScreenShot()'><b>attachScreenShot</b><br>Test class: testng_course.GenerateExtentFiveForAllTests</td>
+<td></td>
+<td>7</td>
+<td>testng_course.GenerateExtentFiveForAllTests@4be29ed9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testng_course.AmazonTest_testng.amazonTitleTest()'><b>amazonTitleTest</b><br>Test class: testng_course.AmazonTest_testng<br>Test method: Verifying title</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\my_backup\C\Selenium_Course\selenium_course\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1421940560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1421940560'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\my_backup\C\Selenium_Course\selenium_course\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testng_course.AmazonTest_testng@1ca3b418</td></tr>
+<tr>
+<td title='testng_course.AmazonTest_testng.doLogin()'><b>doLogin</b><br>Test class: testng_course.AmazonTest_testng</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\my_backup\C\Selenium_Course\selenium_course\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace39751257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace39751257'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\my_backup\C\Selenium_Course\selenium_course\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testng_course.AmazonTest_testng@1ca3b418</td></tr>
+<tr>
+<td title='testng_course.AmazonTest_testng.firstTest()'><b>firstTest</b><br>Test class: testng_course.AmazonTest_testng</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\my_backup\C\Selenium_Course\selenium_course\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2115555031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2115555031'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+in C:\my_backup\C\Selenium_Course\selenium_course\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testng_course.AmazonTest_testng@1ca3b418</td></tr>
+</table><p>
+</body>
+</html>
